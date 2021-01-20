@@ -1,0 +1,27 @@
+:root{
+    --primario: #ef524d;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --blanco: #FFFFFF;
+    --oscuro: #212121;   
+}
+
+/* Lineas para facilitar uso de Rem 1rem = 10px */
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+/* Lineas para facilitar uso de Rem  1rem = 10px*/
+
+
+.titulo{
+    text-align: center;
+    font-size: 3.8rem;
+   
+}
+.titulo span{
+ font-size: 2rem;
+}
