@@ -9,7 +9,12 @@
 /* Lineas para facilitar uso de Rem 1rem = 10px */
 html{
     font-size: 62.5%;
+    box-sizing: border-box; /*Modelo caja*/
 }
+*, *::before, *::after{
+    box-sizing: inherit;
+}/*Modelo caja*/
+
 body{
     font-size: 16px;
     font-family: 'Krub', sans-serif;
@@ -24,7 +29,6 @@ body{
 .titulo span{
  font-size: 2rem;
 }
-
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
@@ -59,5 +63,21 @@ body{
     background-color: var(--primario); 
     color: var(--oscuro);
 }
-
 /* NAVEGACION */
+
+/*Banner */
+.hero{
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+}
+
+/*Banner */
