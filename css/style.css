@@ -10,6 +10,12 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box; /*Modelo caja*/
+    scroll-snap-type: y mandatory; /*Scroll Snap*/
+}
+/*Snap*/
+.servicios,.navegacion-principal, .formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 *, *::before, *::after{
     box-sizing: inherit;
@@ -82,7 +88,7 @@ h3{
 }
 .alinear-derecha{
     justify-content: flex-end;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }/*Utilidades*/
 
 
@@ -143,6 +149,9 @@ h3{
     color:  var(--blanco) ;
 }
 /*Banner */
+
+
+
 
 /*Servicios*/
 @media (min-width: 768px) { 
@@ -223,9 +232,9 @@ h3{
     margin-bottom: .5rem;
     display: block;
 
-}
-.campo textarea{
-    height:20rem ;
+}.campo textarea{
+    height:25rem ;
+    resize: none;
   
 }
 
@@ -234,4 +243,10 @@ h3{
     border: none;
     padding: 1.5rem;
     border-radius: .5rem;
+}
+
+/*  Footer*/
+.footer{
+    text-align: center;
+  
 }
